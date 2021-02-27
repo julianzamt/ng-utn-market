@@ -1,0 +1,11 @@
+<div class="login__container">
+    <h1 class="title">Login</h1>
+
+    <form [formGroup]="login_form" (ngSubmit)="login()" class="form">
+        <input class="input" type="email" placeholder="email">
+        <input class="input" type="password" placeholder="password">
+        <button [ngClass]="buttonClasses">{{buttonText}}</button>
+    </form>
+
+    <div *ngIf="logged" class="success_message">Usuario logueado con éxito</div>
+</div>

@@ -1,0 +1,40 @@
+<div class="register__container">
+    <h1 class="title">Registro</h1>
+    <div class="required_field">* campos requeridos</div>
+    <form [formGroup]="registro_form" (ngSubmit)="register()" class="form">
+        <input type="text" formControlName="first" placeholder="Nombre *" class="input">
+        <div class="warning" *ngIf="registro_form.get('first')?.errors && registro_form.get('first')?.dirty">
+            El campo es obligatorio
+        </div>
+        <input type="text" formControlName="last" placeholder="Apellido *" class="input">
+        <div class="warning" *ngIf="registro_form.get('last')?.errors && registro_form.get('last')?.dirty">
+            El campo es obligatorio
+        </div>
+        <input type="text" formControlName="phone" placeholder="Teléfono" class="input">
+        <input type="email" formControlName="email" placeholder="Email *" class="input">
+        <div class="warning" *ngIf="registro_form.get('email')?.errors && registro_form.get('email')?.dirty">
+            El campo es obligatorio
+        </div>
+        <input type="password" formControlName="password" placeholder="Password *" class="input">
+        <div *ngIf="registro_form.get('password')?.errors && registro_form.get('password')?.dirty">
+            <div class="warning" *ngIf="registro_form.get('password')?.hasError('required')">
+                El campo es obligatorio
+            </div>
+            <div class="warning" *ngIf="registro_form.get('password')?.hasError('minlength')">
+                El password debe contener como mínimo 6 caracteres
+            </div>
+        </div>
+        <input type="password" formControlName="confirmation" placeholder="Confirmación *" class="input">
+        <div *ngIf="registro_form.get('confirmation')?.errors && registro_form.get('confirmation')?.dirty">
+            <div class="warning" *ngIf="registro_form.get('confirmation')?.hasError('required')">
+                El campo es obligatorio
+            </div>
+            <div class="warning" *ngIf="registro_form.get('confirmation')?.hasError('minlength')">
+                El password debe contener como mínimo 6 caracteres
+            </div>
+        </div>
+        <button type="submit" [ngClass]="buttonClasses">{{buttonText}}</button>
+    </form>
+
+    <div *ngIf="registered" class="success_message">Usuario registrado con éxito</div>
+</div>

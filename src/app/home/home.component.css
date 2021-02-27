@@ -1,0 +1,43 @@
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 50% 50%;
+}
+.flex-container-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+input {
+    margin: 1em;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    padding: 1em;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.product {
+    padding: 0.5em;
+    margin: 1em;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+.products__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

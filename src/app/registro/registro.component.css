@@ -1,0 +1,61 @@
+.register__container {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.input {
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0.5em;
+    font-size: 1em;
+}
+
+.form {
+    text-align: center;
+}
+
+.button {
+    padding: 5px;
+    margin: 1em;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.button.registered {
+    background-color: coral;
+}
+
+.warning {
+    font-size: small;
+    color: rgb(237, 91, 91);
+    margin: 0.2em;
+    animation: fade 0.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+@keyframes fade {
+    100%{opacity: 1}
+}
+
+.required_field{
+    font-size: small;
+    color: gray;
+    margin-bottom: 0.2em ;
+}
+
+.success_message {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: fade 0.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
