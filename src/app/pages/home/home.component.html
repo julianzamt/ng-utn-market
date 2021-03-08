@@ -1,0 +1,18 @@
+<div *ngIf="loading" class="loading">Loading...</div>
+<div class="home__container" *ngIf="!loading">
+    <h1 class="home__title">Hot Sales!</h1>
+    <div class="products__container">
+        <div *ngFor="let product of products" class="product__container">
+            <div class="product__name">
+                {{product.name}}
+            </div>
+            <div class="img__container">
+                <img src={{product.photo_url}} alt="product_photo" class="product__img">
+            </div>
+            <div class="product__price">
+                {{product.price | currency}}
+            </div>
+            <button routerLink="/product/{{product.id}}" class="product__button">Detalle</button>
+        </div>
+    </div>
+</div>

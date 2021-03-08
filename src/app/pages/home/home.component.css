@@ -1,0 +1,65 @@
+.home-container {
+    margin: 1em;
+}
+
+.loading {
+    position: absolute;
+    top: calc(50% - 2em);
+    left: calc(50% - 2em);
+    font-size: 4em;
+    font-family: RobotoThin;
+}
+
+.home__title {
+    font-size: 6em;
+    font-family: HotHead;
+    text-align: center;
+    margin: 3rem;
+    color: rgb(118, 32, 34)
+}
+
+.products__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: RobotoThin;
+}
+
+.product__container {
+    padding: 2em;
+    margin: 1em;
+    text-align: center;
+    width: 25%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.product__name {
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+.product__price {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+}
+
+.img__container{
+    display: flex;
+    justify-content: center;
+}
+
+.product__img {
+    height: 10vmax;
+}
+
+.product__button {
+    border: none;
+    padding: 0.5em 1em 0.5em 1em;
+    margin-top: 1em;
+    border-radius: 25px;
+    font-size: 1em;
+    font-family: Roboto;
+    cursor: pointer;
+}

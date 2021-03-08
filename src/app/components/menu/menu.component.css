@@ -1,0 +1,26 @@
+.menu__container {
+    display: flex;
+    padding: 0.5em;
+    align-items: center;
+    font-family: RobotoThin;
+    border-bottom: 1px solid lightgray;
+}
+
+.brand__text {
+    font-size: 2em;
+    margin-left: 5px;
+}
+
+.options__container {
+    margin-left: auto;
+}
+
+.nav__link {
+    margin-right: 0.5em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.nav__link:hover {
+    color: rgb(181, 46, 49)
+}

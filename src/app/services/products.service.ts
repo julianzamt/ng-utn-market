@@ -10,4 +10,8 @@ export class ProductsService {
   getProducts() {
     return this.http.get("https://jsonfy.com/items")
   }
+
+  getProduct(id: any) {
+    return this.http.get("https://jsonfy.com/items/" + id).toPromise()
+  }
 }

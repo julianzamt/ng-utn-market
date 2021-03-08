@@ -1,0 +1,18 @@
+@font-face {
+    font-family: RobotoThin;
+    src:url("../assets/fonts/roboto/Roboto-Thin.ttf")
+}
+@font-face {
+    font-family: HotHead;
+    src:url("../assets/fonts/HOTHEAD/hothead_.ttf")
+}
+@font-face {
+    font-family: LostWage;
+    src:url("../assets/fonts/lostwages/LOSTWAGE.TTF")
+}
+
+.app__container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto auto 1fr auto;
+}

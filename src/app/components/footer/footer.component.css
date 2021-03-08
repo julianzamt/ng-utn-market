@@ -1,0 +1,21 @@
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: RobotoThin;
+    color: grey;
+    padding: 1em;
+}
+
+.footer__icon {
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.footer__icon:hover{
+    filter: invert(15%) sepia(65%) saturate(2891%) hue-rotate(340deg) brightness(121%) contrast(86%);
+}
+
+.about {
+    margin-left: 1em;
+}

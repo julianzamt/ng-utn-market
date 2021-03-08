@@ -1,0 +1,14 @@
+<div *ngIf="loading" class="loading">Loading...</div>
+<div class="detail__container" *ngIf="!loading">
+    <div class="detail__data">
+        <div class="detail__product-name">{{product[0].name}}</div>
+        <div>{{product[0].description}}</div>
+        <div class="detail__product-price">{{product[0].price| currency}} </div>
+
+        <button class="detail__button-comprar" [ngClass]="compra" (click)="comprar()">{{buttonComprarText}}</button>
+        <button routerLink="/" class="detail__button-home">Home</button>
+    </div>
+    <div class="detail__img-container">
+        <img class="detail__img" src={{product[0].photo_url}} alt="product_image">
+    </div>
+</div>

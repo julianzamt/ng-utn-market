@@ -1,0 +1,81 @@
+.loading {
+    position: absolute;
+    top: calc(50% - 2em);
+    left: calc(50% - 2em);
+    font-size: 4em;
+    font-family: RobotoThin;
+}
+
+.detail__container {
+    display:grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    margin: 1em;
+    perspective: 600px;
+}
+
+.detail__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: RobotoThin;
+}
+
+.detail__product-name {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+.detail__product-price {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+
+.buttonComprar__scene {
+    width: 200px;
+    height: 3em;
+    perspective: 600px;
+  }
+
+.detail__button-comprar {
+    will-change: transform;
+    border: 1px solid rgb(118, 32, 34);
+    padding: 0.5em 1em 0.5em 1em;
+    margin-top: 1em;
+    border-radius: 25px;
+    font-size: 1.5em;
+    font-family: Roboto;
+    cursor: pointer;
+    backface-visibility: hidden;
+}
+
+.detail__button-comprar.compra {
+    animation: shrink 1s;
+}
+
+@keyframes shrink {
+    50%{transform: scale(0.1)}
+    100%{transform: scale(1)}
+}
+
+.detail__button-home {
+    border: none;
+    padding: 0.5em 1em 0.5em 1em;
+    margin-top: 2em;
+    border-radius: 25px;
+    font-size: 1em;
+    font-family: Roboto;
+    cursor: pointer;
+}
+
+.detail__img-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail__img {
+    height: 30vmax;
+}
